@@ -1,4 +1,15 @@
 <resources>
     <string name="app_name">BeerWith</string>
     <string name="hello_beer_with">Hello Beer With!</string>
+    <string name="title_activity_drink_with_registration">DrinkWithRegistrationActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="drinking_a">Drinking a...</string>
+    <string name="type_your_bee_brewery_and_name">Type your beer brewery and name...</string>
+    <string name="with">with...</string>
+    <string name="add_my_friend_info">Add my friend info...</string>
+    <string name="done">Done</string>
+    <string name="drinking_with">Drinking with...</string>
+
+    <string name="full_date_format">yyyy, MMMM dd</string>
 </resources>

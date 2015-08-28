@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="br.eng.ecarrara.beerwith.ui.DrinkWithRegistrationActivityFragment">
+
+    <TextView
+        android:id="@+id/txt_view_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/txt_view_drinking_a"
+        android:text="@string/drinking_a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_view_date" />
+
+    <EditText
+        android:id="@+id/edt_txt_beer_info"
+        android:hint="@string/type_your_bee_brewery_and_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_view_drinking_a" />
+
+    <TextView
+        android:id="@+id/txt_view_with"
+        android:text="@string/with"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_txt_beer_info" />
+
+    <TextView
+        android:id="@+id/txt_view_contact_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_view_with"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_add_contact"
+        android:text="@string/add_my_friend_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_view_with" />
+
+    <Button
+        android:id="@+id/btn_done"
+        android:text="@string/done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

@@ -24,10 +24,9 @@ public class BeerWithDbHelper extends SQLiteOpenHelper {
         final String SQL_CREATE_DRINK_WITH_TABLE = "CREATE TABLE " +
                 DrinkWithEntry.TABLE_NAME + " (" +
                 DrinkWithEntry._ID + " INTEGER PRIMARY KEY, " +
-                DrinkWithEntry.COLUMN_DRINKING_DATE + " TEXT NOT NULL " +
-                DrinkWithEntry.COLUMN_BEER_DESC + "TEXT NOT NULL" +
+                DrinkWithEntry.COLUMN_DRINKING_DATE + " TEXT NOT NULL, " +
+                DrinkWithEntry.COLUMN_BEER_DESC + " TEXT NOT NULL, " +
                 DrinkWithEntry.COLUMN_CONTACT_URI + " TEXT NOT NULL " +
-                ") ON CONFLICT IGNORE" +
                 ");";
 
         db.execSQL(SQL_CREATE_DRINK_WITH_TABLE);
