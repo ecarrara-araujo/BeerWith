@@ -36,7 +36,7 @@ public class Utility {
      *                in {@link Utility#DATE_FORMAT}
      * @return The day in the form of a string formatted
      */
-    public static String getFormattedDateForBookInfo(Context context, String dateString) {
+    public static String getFormattedDate(Context context, String dateString) {
         return getFormattedMonthDay(context.getString(R.string.full_date_format), dateString);
     }
 

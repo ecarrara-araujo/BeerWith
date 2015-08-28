@@ -8,6 +8,8 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import br.eng.ecarrara.beerwith.util.Utility;
+
 /**
  * Created by ecarrara on 28/08/2015.
  */
@@ -21,7 +23,7 @@ public class BeerWithContract {
 
     // Format used for storing dates in the database.  Also used for converting those strings
     // back into date objects for comparison/processing.
-    public static final String DATE_FORMAT = "yyyyMMdd";
+    public static final String DATE_FORMAT = Utility.DATE_FORMAT;
 
     public static final class DrinkWithEntry implements BaseColumns {
         public static final Uri CONTENT_URI =

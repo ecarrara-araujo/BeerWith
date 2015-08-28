@@ -10,6 +10,8 @@
     <string name="add_my_friend_info">Add my friend info...</string>
     <string name="done">Done</string>
     <string name="drinking_with">Drinking with...</string>
-
+    <string name="empty_beer_with_list_message">Are you having a beer with someone right now?</string>
+    <string name="add_beer_with_message">Register this moment touching the plus button bellow!</string>
+    
     <string name="full_date_format">yyyy, MMMM dd</string>
 </resources>
