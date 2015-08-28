@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">BeerWith</string>
+    <string name="hello_beer_with">Hello Beer With!</string>
+</resources>
