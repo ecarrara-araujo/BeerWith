@@ -1,5 +1,21 @@
-<fragment xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:id="@+id/fragment"
-    android:name="br.eng.ecarrara.beerwith.BeerWithMainActivityFragment"
-    tools:layout="@layout/fragment_beer_with_main" android:layout_width="match_parent"
-    android:layout_height="match_parent" />
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <fragment
+        android:id="@+id/fragment"
+        android:name="br.eng.ecarrara.beerwith.BeerWithMainActivityFragment"
+        tools:layout="@layout/fragment_beer_with_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.design.widget.FloatingActionButton
+        style="@style/AppTheme.FabStyle"
+        android:id="@+id/add_beer_with"
+        android:src="@drawable/ic_add_white_24dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>
+
