@@ -124,7 +124,13 @@ public class DrinkWithRegistrationActivityFragment extends Fragment {
         ContentValues drinkWithValues = new ContentValues();
         drinkWithValues.put(DrinkWithEntry.COLUMN_BEER_DESC,
                 mBeerDescTextView.getText().toString());
-        drinkWithValues.put(DrinkWithEntry.COLUMN_CONTACT_URI, mContactUri.toString());
+
+        if(null != mContactUri) {
+            drinkWithValues.put(DrinkWithEntry.COLUMN_CONTACT_URI, mContactUri.toString());
+        } else {
+            drinkWithValues.put(DrinkWithEntry.COLUMN_CONTACT_URI, "");
+        }
+
         drinkWithValues.put(DrinkWithEntry.COLUMN_DRINKING_DATE,
                 BeerWithContract.getDbDateString(Calendar.getInstance().getTime()));
         Uri returnUri =
